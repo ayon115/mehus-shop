@@ -7,23 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F648DA86CD7BE4A4C6BBAAD /* Pods_mehus_shop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF74A809AF3353D32F0CDF2 /* Pods_mehus_shop.framework */; };
+		5B472BD72AB0C01900852F26 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B472BD52AB0C01900852F26 /* ProductCell.swift */; };
+		5B472BD82AB0C01900852F26 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B472BD62AB0C01900852F26 /* ProductCell.xib */; };
+		5B472BDA2AB0C40900852F26 /* DisplayProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B472BD92AB0C40900852F26 /* DisplayProduct.swift */; };
+		5B61FDF92AACD0600073C894 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B61FDF82AACD0600073C894 /* Product.swift */; };
+		5B61FDFC2AACD48A0073C894 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B61FDFA2AACD48A0073C894 /* SearchCell.swift */; };
+		5B61FDFD2AACD48A0073C894 /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B61FDFB2AACD48A0073C894 /* SearchCell.xib */; };
+		5B7D80F22AA8D48D00151FE3 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D80F12AA8D48D00151FE3 /* ProfileController.swift */; };
+		5BAEE75A2AA39002007D92A4 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEE7592AA39002007D92A4 /* SignupController.swift */; };
+		5BAEE75C2AA3990E007D92A4 /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEE75B2AA3990E007D92A4 /* CategoryController.swift */; };
+		5BAEE75E2AA39927007D92A4 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEE75D2AA39927007D92A4 /* SearchController.swift */; };
+		5BAEE7602AA39945007D92A4 /* OrdersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEE75F2AA39945007D92A4 /* OrdersController.swift */; };
+		5BAEE7622AA3995B007D92A4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEE7612AA3995B007D92A4 /* SettingsController.swift */; };
+		5BAEE7642AA39E10007D92A4 /* ProductsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEE7632AA39E10007D92A4 /* ProductsController.swift */; };
+		5BB3DB4E2A9A678400AD9A0F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3DB4D2A9A678400AD9A0F /* Constants.swift */; };
 		5BD109C22A95109400B7A4E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD109C12A95109400B7A4E4 /* AppDelegate.swift */; };
 		5BD109C42A95109400B7A4E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD109C32A95109400B7A4E4 /* SceneDelegate.swift */; };
-		5BD109C62A95109400B7A4E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD109C52A95109400B7A4E4 /* ViewController.swift */; };
+		5BD109C62A95109400B7A4E4 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD109C52A95109400B7A4E4 /* SplashController.swift */; };
 		5BD109C92A95109400B7A4E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD109C72A95109400B7A4E4 /* Main.storyboard */; };
 		5BD109CB2A95109500B7A4E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD109CA2A95109500B7A4E4 /* Assets.xcassets */; };
 		5BD109CE2A95109500B7A4E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD109CC2A95109500B7A4E4 /* LaunchScreen.storyboard */; };
+		5BD109D72A95154900B7A4E4 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD109D52A95154900B7A4E4 /* LoginController.swift */; };
+		5BFA60302A9E4AFE00112E14 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA602F2A9E4AFE00112E14 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B472BD52AB0C01900852F26 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		5B472BD62AB0C01900852F26 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		5B472BD92AB0C40900852F26 /* DisplayProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayProduct.swift; sourceTree = "<group>"; };
+		5B61FDF82AACD0600073C894 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		5B61FDFA2AACD48A0073C894 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		5B61FDFB2AACD48A0073C894 /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
+		5B7D80F12AA8D48D00151FE3 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		5BAEE7592AA39002007D92A4 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		5BAEE75B2AA3990E007D92A4 /* CategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
+		5BAEE75D2AA39927007D92A4 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		5BAEE75F2AA39945007D92A4 /* OrdersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersController.swift; sourceTree = "<group>"; };
+		5BAEE7612AA3995B007D92A4 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		5BAEE7632AA39E10007D92A4 /* ProductsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsController.swift; sourceTree = "<group>"; };
+		5BB3DB4D2A9A678400AD9A0F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5BD109BE2A95109400B7A4E4 /* mehus-shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mehus-shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD109C12A95109400B7A4E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BD109C32A95109400B7A4E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5BD109C52A95109400B7A4E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BD109C52A95109400B7A4E4 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		5BD109C82A95109400B7A4E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BD109CA2A95109500B7A4E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BD109CD2A95109500B7A4E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BD109CF2A95109500B7A4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BD109D52A95154900B7A4E4 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		5BFA602F2A9E4AFE00112E14 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		76767941D87BC0004E7F2AC7 /* Pods-mehus-shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mehus-shop.debug.xcconfig"; path = "Target Support Files/Pods-mehus-shop/Pods-mehus-shop.debug.xcconfig"; sourceTree = "<group>"; };
+		DCF74A809AF3353D32F0CDF2 /* Pods_mehus_shop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mehus_shop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99060009E2671F4B47FA8CB /* Pods-mehus-shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mehus-shop.release.xcconfig"; path = "Target Support Files/Pods-mehus-shop/Pods-mehus-shop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +67,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F648DA86CD7BE4A4C6BBAAD /* Pods_mehus_shop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32B89A34E26140794AB2945E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCF74A809AF3353D32F0CDF2 /* Pods_mehus_shop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B61FDF72AACD0500073C894 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B61FDF82AACD0600073C894 /* Product.swift */,
+				5B472BD92AB0C40900852F26 /* DisplayProduct.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5BD109B52A95109400B7A4E4 = {
 			isa = PBXGroup;
 			children = (
 				5BD109C02A95109400B7A4E4 /* mehus-shop */,
 				5BD109BF2A95109400B7A4E4 /* Products */,
+				71CD3CD8A2D52FA1B8B6CC21 /* Pods */,
+				32B89A34E26140794AB2945E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +112,103 @@
 		5BD109C02A95109400B7A4E4 /* mehus-shop */ = {
 			isa = PBXGroup;
 			children = (
-				5BD109C12A95109400B7A4E4 /* AppDelegate.swift */,
-				5BD109C32A95109400B7A4E4 /* SceneDelegate.swift */,
-				5BD109C52A95109400B7A4E4 /* ViewController.swift */,
-				5BD109C72A95109400B7A4E4 /* Main.storyboard */,
+				5B61FDF72AACD0500073C894 /* Models */,
+				5BFA602E2A9E4AD600112E14 /* Extensions */,
+				5BFA602D2A9E427700112E14 /* ViewModels */,
+				5BFA602C2A9E426D00112E14 /* Services */,
+				5BFA602B2A9E423B00112E14 /* CustomViews */,
+				5BFA602A2A9E421D00112E14 /* Utils */,
+				5BFA60292A9E41F500112E14 /* Storyboards */,
+				5BFA60282A9E41CF00112E14 /* ViewControllers */,
+				5BFA60272A9E419D00112E14 /* AppDelegate */,
 				5BD109CA2A95109500B7A4E4 /* Assets.xcassets */,
-				5BD109CC2A95109500B7A4E4 /* LaunchScreen.storyboard */,
 				5BD109CF2A95109500B7A4E4 /* Info.plist */,
 			);
 			path = "mehus-shop";
+			sourceTree = "<group>";
+		};
+		5BFA60272A9E419D00112E14 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5BD109C12A95109400B7A4E4 /* AppDelegate.swift */,
+				5BD109C32A95109400B7A4E4 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5BFA60282A9E41CF00112E14 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BD109C52A95109400B7A4E4 /* SplashController.swift */,
+				5BD109D52A95154900B7A4E4 /* LoginController.swift */,
+				5BAEE7592AA39002007D92A4 /* SignupController.swift */,
+				5BAEE75B2AA3990E007D92A4 /* CategoryController.swift */,
+				5BAEE75D2AA39927007D92A4 /* SearchController.swift */,
+				5BAEE75F2AA39945007D92A4 /* OrdersController.swift */,
+				5BAEE7612AA3995B007D92A4 /* SettingsController.swift */,
+				5BAEE7632AA39E10007D92A4 /* ProductsController.swift */,
+				5B7D80F12AA8D48D00151FE3 /* ProfileController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5BFA60292A9E41F500112E14 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5BD109CC2A95109500B7A4E4 /* LaunchScreen.storyboard */,
+				5BD109C72A95109400B7A4E4 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5BFA602A2A9E421D00112E14 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5BB3DB4D2A9A678400AD9A0F /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5BFA602B2A9E423B00112E14 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				5B61FDFA2AACD48A0073C894 /* SearchCell.swift */,
+				5B61FDFB2AACD48A0073C894 /* SearchCell.xib */,
+				5B472BD52AB0C01900852F26 /* ProductCell.swift */,
+				5B472BD62AB0C01900852F26 /* ProductCell.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		5BFA602C2A9E426D00112E14 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5BFA602D2A9E427700112E14 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5BFA602E2A9E4AD600112E14 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5BFA602F2A9E4AFE00112E14 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		71CD3CD8A2D52FA1B8B6CC21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76767941D87BC0004E7F2AC7 /* Pods-mehus-shop.debug.xcconfig */,
+				F99060009E2671F4B47FA8CB /* Pods-mehus-shop.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BD109D22A95109500B7A4E4 /* Build configuration list for PBXNativeTarget "mehus-shop" */;
 			buildPhases = (
+				D7AF391848DE372C4F0F5B42 /* [CP] Check Pods Manifest.lock */,
 				5BD109BA2A95109400B7A4E4 /* Sources */,
 				5BD109BB2A95109400B7A4E4 /* Frameworks */,
 				5BD109BC2A95109400B7A4E4 /* Resources */,
+				C00B2AD5C6598A15788C2101 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BD109CE2A95109500B7A4E4 /* LaunchScreen.storyboard in Resources */,
+				5B61FDFD2AACD48A0073C894 /* SearchCell.xib in Resources */,
+				5B472BD82AB0C01900852F26 /* ProductCell.xib in Resources */,
 				5BD109CB2A95109500B7A4E4 /* Assets.xcassets in Resources */,
 				5BD109C92A95109400B7A4E4 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +281,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C00B2AD5C6598A15788C2101 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mehus-shop/Pods-mehus-shop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mehus-shop/Pods-mehus-shop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mehus-shop/Pods-mehus-shop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7AF391848DE372C4F0F5B42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mehus-shop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5BD109BA2A95109400B7A4E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BD109C62A95109400B7A4E4 /* ViewController.swift in Sources */,
+				5BAEE7602AA39945007D92A4 /* OrdersController.swift in Sources */,
+				5B61FDFC2AACD48A0073C894 /* SearchCell.swift in Sources */,
+				5BFA60302A9E4AFE00112E14 /* UIViewExtension.swift in Sources */,
+				5BB3DB4E2A9A678400AD9A0F /* Constants.swift in Sources */,
+				5BAEE75A2AA39002007D92A4 /* SignupController.swift in Sources */,
+				5BD109C62A95109400B7A4E4 /* SplashController.swift in Sources */,
+				5B7D80F22AA8D48D00151FE3 /* ProfileController.swift in Sources */,
+				5B472BDA2AB0C40900852F26 /* DisplayProduct.swift in Sources */,
+				5BAEE7622AA3995B007D92A4 /* SettingsController.swift in Sources */,
+				5BD109D72A95154900B7A4E4 /* LoginController.swift in Sources */,
+				5BAEE75C2AA3990E007D92A4 /* CategoryController.swift in Sources */,
 				5BD109C22A95109400B7A4E4 /* AppDelegate.swift in Sources */,
+				5BAEE75E2AA39927007D92A4 /* SearchController.swift in Sources */,
 				5BD109C42A95109400B7A4E4 /* SceneDelegate.swift in Sources */,
+				5B472BD72AB0C01900852F26 /* ProductCell.swift in Sources */,
+				5BAEE7642AA39E10007D92A4 /* ProductsController.swift in Sources */,
+				5B61FDF92AACD0600073C894 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +486,7 @@
 		};
 		5BD109D32A95109500B7A4E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76767941D87BC0004E7F2AC7 /* Pods-mehus-shop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,8 +494,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mehus-shop/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Mehus Shop";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -309,6 +515,7 @@
 		};
 		5BD109D42A95109500B7A4E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F99060009E2671F4B47FA8CB /* Pods-mehus-shop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,8 +523,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mehus-shop/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Mehus Shop";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
