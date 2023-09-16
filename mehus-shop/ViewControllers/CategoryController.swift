@@ -5,17 +5,11 @@
 //  Created by Ashiq Uz Zoha on 2/9/23.
 //
 
-/*
- 
- cat1 cat2 cat3 cat4 ---->
- 
- prod1 prod2
- prod3 prod4
- |
- |
-*/
 
 import UIKit
+import Alamofire
+import MBProgressHUD
+import SwiftyJSON
 
 class CategoryController: UIViewController {
     
@@ -29,6 +23,8 @@ class CategoryController: UIViewController {
         DisplayProduct(id: 1, name: "Adidas Shoe", description: "Adidas shoe description", discountedPrice: 80.0, originalPrice: 90.0, addedCount: 0),
         DisplayProduct(id: 1, name: "Puma Jersey", description: "Puma Jersey description", discountedPrice: 90.0, originalPrice: 100.0, addedCount: 0)
     ]
+    
+    var categoryCollection: [JSON] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +44,8 @@ class CategoryController: UIViewController {
         
         let sectionHeaderNib = UINib(nibName: CellIdentifier.collectionSectionHeaderView, bundle: nil)
         self.mCollectionView.register(sectionHeaderNib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CellIdentifier.collectionSectionHeaderView)
+        
+        self.fetchProductCategories()
     }
 }
 
@@ -74,6 +72,7 @@ extension CategoryController: UICollectionViewDataSource {
         
         if section == 0 {
             let categoryHolderCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.categoryHolderCell, for: indexPath) as! CategoryHolderCell
+            categoryHolderCell.setCategoriesAndReload(cats: self.categoryCollection)
             return categoryHolderCell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.productCell, for: indexPath) as! ProductCell
@@ -81,7 +80,6 @@ extension CategoryController: UICollectionViewDataSource {
             cell.setProductInformation(product: product)
             return cell
         }
-        
     }
 }
 
@@ -133,4 +131,39 @@ extension CategoryController {
         
         return CGSize(width: itemWidth, height: 275.0)
     }
+}
+
+extension CategoryController {
+    
+    func fetchProductCategories () {
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        let url = RestClient.baseUrl + RestClient.categoryUrl
+        AF.request(url).responseData { response in
+            debugPrint(response)
+            MBProgressHUD.hide(for: self.view, animated: true)
+            
+            switch (response.result) {
+                case .success:
+                    print("Validation Successful")
+                if let responseData = response.value {
+                    do {
+                        let json = try JSON (data: responseData)
+                       // print(json)
+                        if let array = json.array {
+                            self.categoryCollection = array
+                            self.mCollectionView.reloadData()
+                        }
+                       // print("categoryCol = \(self.categoryCollection)")
+                    } catch let error {
+                        print(error)
+                    }
+                }
+                
+                case let .failure(error):
+                    print(error)
+            }
+        }
+    }
+    
+    
 }

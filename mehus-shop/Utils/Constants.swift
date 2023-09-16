@@ -22,3 +22,8 @@ class CellIdentifier {
     public static let categoryCell = "CategoryCell"
     public static let collectionSectionHeaderView = "CollectionSectionHeaderView"
 }
+
+class RestClient {
+    public static let baseUrl = "https://api.escuelajs.co"
+    public static let categoryUrl = "/api/v1/categories"
+}

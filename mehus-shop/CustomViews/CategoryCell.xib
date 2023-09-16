@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,20 +20,27 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIL-YD-wzf">
                         <rect key="frame" x="0.0" y="0.0" width="80" height="70"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSP-Y7-1Oa">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JB3-Rm-4f9">
                                 <rect key="frame" x="0.0" y="0.0" width="80" height="70"/>
-                                <color key="backgroundColor" name="theme200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YST-SK-GdK">
+                                <rect key="frame" x="5" y="5" width="70" height="60"/>
+                                <color key="backgroundColor" red="0.74900001287460327" green="0.88999998569488525" blue="0.97299998998641968" alpha="0.48716887417218541" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <color key="textColor" red="0.12705176770000001" green="0.052710921930000001" blue="0.063457106829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="RSP-Y7-1Oa" firstAttribute="leading" secondItem="EIL-YD-wzf" secondAttribute="leading" id="EdY-ge-qvP"/>
-                            <constraint firstAttribute="trailing" secondItem="RSP-Y7-1Oa" secondAttribute="trailing" id="YlD-Pp-Yu9"/>
-                            <constraint firstItem="RSP-Y7-1Oa" firstAttribute="top" secondItem="EIL-YD-wzf" secondAttribute="top" id="pe6-Jl-9dW"/>
-                            <constraint firstAttribute="bottom" secondItem="RSP-Y7-1Oa" secondAttribute="bottom" id="yiQ-hd-wVc"/>
+                            <constraint firstItem="YST-SK-GdK" firstAttribute="top" secondItem="EIL-YD-wzf" secondAttribute="top" constant="5" id="UfR-Sj-hxq"/>
+                            <constraint firstAttribute="trailing" secondItem="JB3-Rm-4f9" secondAttribute="trailing" id="bZN-FA-y1m"/>
+                            <constraint firstItem="YST-SK-GdK" firstAttribute="leading" secondItem="EIL-YD-wzf" secondAttribute="leading" constant="5" id="cqk-Z4-cud"/>
+                            <constraint firstAttribute="trailing" secondItem="YST-SK-GdK" secondAttribute="trailing" constant="5" id="dfv-04-W0t"/>
+                            <constraint firstAttribute="bottom" secondItem="JB3-Rm-4f9" secondAttribute="bottom" id="eDn-aN-Rei"/>
+                            <constraint firstItem="JB3-Rm-4f9" firstAttribute="leading" secondItem="EIL-YD-wzf" secondAttribute="leading" id="fyv-16-D9h"/>
+                            <constraint firstItem="JB3-Rm-4f9" firstAttribute="top" secondItem="EIL-YD-wzf" secondAttribute="top" id="iPw-Cs-edQ"/>
+                            <constraint firstAttribute="bottom" secondItem="YST-SK-GdK" secondAttribute="bottom" constant="5" id="uxD-Wd-9y7"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -48,15 +54,13 @@
             </constraints>
             <size key="customSize" width="80" height="70"/>
             <connections>
-                <outlet property="nameLabel" destination="RSP-Y7-1Oa" id="YFF-AK-s6R"/>
+                <outlet property="categoryImageView" destination="JB3-Rm-4f9" id="un4-Wc-SFn"/>
+                <outlet property="nameLabel" destination="YST-SK-GdK" id="0lB-fU-gkw"/>
             </connections>
             <point key="canvasLocation" x="59.541984732824424" y="26.760563380281692"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <namedColor name="theme200">
-            <color red="0.74900001287460327" green="0.88999998569488525" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

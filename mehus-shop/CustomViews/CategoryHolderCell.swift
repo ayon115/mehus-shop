@@ -6,13 +6,15 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Kingfisher
 
 class CategoryHolderCell: UICollectionViewCell {
 
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
-    let categories : [String] = [
-        "Electronics", "Fashion", "Accessories", "Sports", "Kids Items"
+    var categories : [JSON] = [
+        
     ]
     
     override func awakeFromNib() {
@@ -28,6 +30,11 @@ class CategoryHolderCell: UICollectionViewCell {
         let categoryCellNib = UINib(nibName: CellIdentifier.categoryCell, bundle: nil)
         self.categoryCollectionView.register(categoryCellNib, forCellWithReuseIdentifier: CellIdentifier.categoryCell)
     }
+    
+    func setCategoriesAndReload (cats: [JSON]) {
+        self.categories = cats
+        self.categoryCollectionView.reloadData()
+    }
 }
 
 extension CategoryHolderCell: UICollectionViewDataSource {
@@ -37,13 +44,27 @@ extension CategoryHolderCell: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print("categoryCount = \(categories.count)")
         return categories.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = categoryCollectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.categoryCell, for: indexPath) as! CategoryCell
-        cell.nameLabel.text = categories[indexPath.row]
+        
+        let data = self.categories[indexPath.row]
+        if let name = data["name"].string {
+            cell.nameLabel.text = name
+        }
+        
+        if let image = data["image"].string, let url = URL(string: image) {
+            print("url = \(url)")
+            cell.categoryImageView.kf.setImage(with: url)
+        } else {
+            print("url nil")
+        }
+        
+       
         cell.nameLabel.applyCorner(cornerRadius: 10.0, borderWidth: 0.0, borderColor: .clear)
         return cell
     }
