@@ -8,6 +8,7 @@ target 'mehus-shop' do
   pod 'MBProgressHUD', '~> 1.2.0'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Kingfisher', '~> 7.0'
+  pod 'KeychainSwift', '~> 20.0'
 end
 
 post_install do |installer|

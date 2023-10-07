@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App wants to access the Photo Library to pick image for product</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>App wants to access the Media Library to pick media for product</string>
+	<key>NSCameraUsageDescription</key>
+	<string>App wants to use the camera to capture image for product</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

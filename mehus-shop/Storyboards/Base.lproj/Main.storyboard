@@ -66,7 +66,7 @@
                                 <color key="textColor" name="theme900"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p4e-LP-z2x">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p4e-LP-z2x">
                                 <rect key="frame" x="71.666666666666686" y="406" width="250" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="Pku-5S-g5P"/>
@@ -464,6 +464,47 @@
             </objects>
             <point key="canvasLocation" x="2631.2977099236641" y="2811.9718309859159"/>
         </scene>
+        <!--Create Product Controller-->
+        <scene sceneID="QQn-46-Sdg">
+            <objects>
+                <viewController storyboardIdentifier="CreateProductController" id="Zlo-GU-7jT" customClass="CreateProductController" customModule="mehus_shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3m7-gr-ReI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="oVv-QG-IWa">
+                                <rect key="frame" x="60" y="139" width="273" height="273"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oVv-QG-IWa" secondAttribute="height" multiplier="1:1" id="l2X-uR-jm7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGB-dP-P1E">
+                                <rect key="frame" x="60" y="139" width="273" height="273"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Hg-tD-EoD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yGB-dP-P1E" firstAttribute="top" secondItem="oVv-QG-IWa" secondAttribute="top" id="NFs-rx-zLM"/>
+                            <constraint firstItem="yGB-dP-P1E" firstAttribute="leading" secondItem="oVv-QG-IWa" secondAttribute="leading" id="Rv9-TM-Tho"/>
+                            <constraint firstItem="yGB-dP-P1E" firstAttribute="bottom" secondItem="oVv-QG-IWa" secondAttribute="bottom" id="SsB-EC-zje"/>
+                            <constraint firstItem="8Hg-tD-EoD" firstAttribute="trailing" secondItem="oVv-QG-IWa" secondAttribute="trailing" constant="60" id="U0z-K2-Cdb"/>
+                            <constraint firstItem="oVv-QG-IWa" firstAttribute="top" secondItem="8Hg-tD-EoD" secondAttribute="top" constant="80" id="bQC-1y-m10"/>
+                            <constraint firstItem="oVv-QG-IWa" firstAttribute="leading" secondItem="8Hg-tD-EoD" secondAttribute="leading" constant="60" id="toB-M4-kJ2"/>
+                            <constraint firstItem="yGB-dP-P1E" firstAttribute="trailing" secondItem="oVv-QG-IWa" secondAttribute="trailing" id="yNJ-z0-pgM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickImageButton" destination="yGB-dP-P1E" id="H7X-5x-7X9"/>
+                        <outlet property="productImageView" destination="oVv-QG-IWa" id="wep-W3-ccO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YzE-gk-rXL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3373.2824427480914" y="2811.9718309859159"/>
+        </scene>
         <!--Category Controller-->
         <scene sceneID="cT4-Dk-yMC">
             <objects>
@@ -615,6 +656,7 @@
         <image name="gear" catalog="system" width="128" height="122"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="orders" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="placeholder" width="800" height="600"/>
         <namedColor name="theme500">
             <color red="0.125" green="0.6119999885559082" blue="0.84299999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

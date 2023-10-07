@@ -7,6 +7,9 @@
 
 import UIKit
 import ActionKit
+import Alamofire
+import MBProgressHUD
+import Kingfisher
 
 class ProfileController: UIViewController {
 
@@ -51,7 +54,8 @@ class ProfileController: UIViewController {
         
         self.nameLabel.text = "Deamon Targariyen"
         self.bioLabel.text = "Prince Daemon Targaryen is a prince of the Targaryen dynasty, and the younger brother of King Viserys I Targaryen. He is the uncle of Queen Rhaenyra Targaryen, and later becomes her second husband and king consort."
-        
+       
+        self.fetchUserProfile()
     }
     
    
@@ -64,14 +68,37 @@ class ProfileController: UIViewController {
         return Double(arc4random() % 255) / 255.0
     }
     
-    /*
-    
-    @IBAction func onClickMeButtonClicked () {
-        print("Click me button was clicked")
+    func fetchUserProfile () {
+        
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        let url = RestClient.baseUrl + RestClient.profileUrl
+        let token = self.readFromUserDefaults(key: "accessToken", defaultValue: "") ?? ""
+        let headers: HTTPHeaders = [
+            "Authorization": "Bearer " + token
+        ]
+        
+        AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers, interceptor: nil, requestModifier: nil).responseDecodable(of: ProfileResponse.self) { response in
+            debugPrint(response)
+            MBProgressHUD.hide(for: self.view, animated: true)
+            
+            switch (response.result) {
+                case .success:
+                    print("Validation Successful")
+                if let profile = response.value {
+                    self.updateUI(profile: profile)
+                }
+                
+                case let .failure(error):
+                    print(error)
+            }
+        }
     }
     
-    @objc func buttonClickHandler () {
-        print("my button was clicked")
+    func updateUI (profile: ProfileResponse) {
+        self.nameLabel.text = profile.name
+        self.bioLabel.text = profile.role
+        if let url = URL(string: profile.avatar) {
+            self.profilePhotoImageView.kf.setImage(with: url)
+        }
     }
-     */
 }

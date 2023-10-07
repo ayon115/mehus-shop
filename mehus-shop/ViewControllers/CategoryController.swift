@@ -136,6 +136,7 @@ extension CategoryController {
 extension CategoryController {
     
     func fetchProductCategories () {
+        
         MBProgressHUD.showAdded(to: self.view, animated: true)
         let url = RestClient.baseUrl + RestClient.categoryUrl
         AF.request(url).responseData { response in
