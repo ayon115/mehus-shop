@@ -14,6 +14,8 @@ class Constants {
     public static let tabController = "tabController"
     public static let profileController = "ProfileController"
     public static let createProductController = "CreateProductController"
+    public static let addressController = "AddressController"
+    public static let addAddressController = "AddAddressController"
 }
 
 class CellIdentifier {
@@ -32,4 +34,7 @@ class RestClient {
     public static let photoUploadUrl = "/api/v1/files/upload"
 }
 
+class AppData {
+    public static var addresses: [Address] = []
+}
 

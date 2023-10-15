@@ -17,6 +17,11 @@
 		5B61FDF92AACD0600073C894 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B61FDF82AACD0600073C894 /* Product.swift */; };
 		5B61FDFC2AACD48A0073C894 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B61FDFA2AACD48A0073C894 /* SearchCell.swift */; };
 		5B61FDFD2AACD48A0073C894 /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B61FDFB2AACD48A0073C894 /* SearchCell.xib */; };
+		5B6F06332ADAE3D7001BD337 /* AddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6F06322ADAE3D7001BD337 /* AddressController.swift */; };
+		5B6F06352ADAE5E5001BD337 /* AddAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6F06342ADAE5E5001BD337 /* AddAddressController.swift */; };
+		5B6F06372ADAE927001BD337 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6F06362ADAE927001BD337 /* Address.swift */; };
+		5B6F063A2ADAED5E001BD337 /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6F06382ADAED5E001BD337 /* AddressCell.swift */; };
+		5B6F063B2ADAED5E001BD337 /* AddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B6F06392ADAED5E001BD337 /* AddressCell.xib */; };
 		5B7B65CD2AB5FD6D004ED405 /* CategoryHolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7B65CB2AB5FD6D004ED405 /* CategoryHolderCell.swift */; };
 		5B7B65CE2AB5FD6D004ED405 /* CategoryHolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B7B65CC2AB5FD6D004ED405 /* CategoryHolderCell.xib */; };
 		5B7B65D12AB60023004ED405 /* CollectionSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7B65CF2AB60023004ED405 /* CollectionSectionHeaderView.swift */; };
@@ -55,6 +60,11 @@
 		5B61FDF82AACD0600073C894 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		5B61FDFA2AACD48A0073C894 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		5B61FDFB2AACD48A0073C894 /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
+		5B6F06322ADAE3D7001BD337 /* AddressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressController.swift; sourceTree = "<group>"; };
+		5B6F06342ADAE5E5001BD337 /* AddAddressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressController.swift; sourceTree = "<group>"; };
+		5B6F06362ADAE927001BD337 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		5B6F06382ADAED5E001BD337 /* AddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCell.swift; sourceTree = "<group>"; };
+		5B6F06392ADAED5E001BD337 /* AddressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressCell.xib; sourceTree = "<group>"; };
 		5B7B65CB2AB5FD6D004ED405 /* CategoryHolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHolderCell.swift; sourceTree = "<group>"; };
 		5B7B65CC2AB5FD6D004ED405 /* CategoryHolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryHolderCell.xib; sourceTree = "<group>"; };
 		5B7B65CF2AB60023004ED405 /* CollectionSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSectionHeaderView.swift; sourceTree = "<group>"; };
@@ -115,6 +125,7 @@
 				5BAC7EC92ACC6189000ACA0A /* Requests */,
 				5B61FDF82AACD0600073C894 /* Product.swift */,
 				5B472BD92AB0C40900852F26 /* DisplayProduct.swift */,
+				5B6F06362ADAE927001BD337 /* Address.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,6 +206,8 @@
 				5BAEE7632AA39E10007D92A4 /* ProductsController.swift */,
 				5B7D80F12AA8D48D00151FE3 /* ProfileController.swift */,
 				5B30713E2AD1A47100303B86 /* CreateProductController.swift */,
+				5B6F06322ADAE3D7001BD337 /* AddressController.swift */,
+				5B6F06342ADAE5E5001BD337 /* AddAddressController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -229,6 +242,8 @@
 				5B7B65D02AB60023004ED405 /* CollectionSectionHeaderView.xib */,
 				5B7B65D32AB60490004ED405 /* CategoryCell.swift */,
 				5B7B65D42AB60490004ED405 /* CategoryCell.xib */,
+				5B6F06382ADAED5E001BD337 /* AddressCell.swift */,
+				5B6F06392ADAED5E001BD337 /* AddressCell.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -330,6 +345,7 @@
 				5B61FDFD2AACD48A0073C894 /* SearchCell.xib in Resources */,
 				5B472BD82AB0C01900852F26 /* ProductCell.xib in Resources */,
 				5B7B65D22AB60023004ED405 /* CollectionSectionHeaderView.xib in Resources */,
+				5B6F063B2ADAED5E001BD337 /* AddressCell.xib in Resources */,
 				5B7B65CE2AB5FD6D004ED405 /* CategoryHolderCell.xib in Resources */,
 				5BD109CB2A95109500B7A4E4 /* Assets.xcassets in Resources */,
 				5BD109C92A95109400B7A4E4 /* Main.storyboard in Resources */,
@@ -388,6 +404,7 @@
 			files = (
 				5BAEE7602AA39945007D92A4 /* OrdersController.swift in Sources */,
 				5B61FDFC2AACD48A0073C894 /* SearchCell.swift in Sources */,
+				5B6F06352ADAE5E5001BD337 /* AddAddressController.swift in Sources */,
 				5B3071412AD1AE7600303B86 /* FileUploadResponse.swift in Sources */,
 				5BFA60302A9E4AFE00112E14 /* UIViewExtension.swift in Sources */,
 				5B7B65D12AB60023004ED405 /* CollectionSectionHeaderView.swift in Sources */,
@@ -406,9 +423,12 @@
 				5B30713F2AD1A47100303B86 /* CreateProductController.swift in Sources */,
 				5BD109C22A95109400B7A4E4 /* AppDelegate.swift in Sources */,
 				5BAEE75E2AA39927007D92A4 /* SearchController.swift in Sources */,
+				5B6F06332ADAE3D7001BD337 /* AddressController.swift in Sources */,
 				5BD109C42A95109400B7A4E4 /* SceneDelegate.swift in Sources */,
 				5B472BD72AB0C01900852F26 /* ProductCell.swift in Sources */,
+				5B6F06372ADAE927001BD337 /* Address.swift in Sources */,
 				5B7B65CD2AB5FD6D004ED405 /* CategoryHolderCell.swift in Sources */,
+				5B6F063A2ADAED5E001BD337 /* AddressCell.swift in Sources */,
 				5BAEE7642AA39E10007D92A4 /* ProductsController.swift in Sources */,
 				5B61FDF92AACD0600073C894 /* Product.swift in Sources */,
 				5BAC7EC82ACC5D24000ACA0A /* UIViewControllerExtension.swift in Sources */,
@@ -563,6 +583,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mehus-shop/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Mehus Shop";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "App wants to access the Media Library to pick media for product";
+				INFOPLIST_KEY_NSCameraUsageDescription = "App wants to use the camera to capture image for product";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App wants to access your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App wants to access your location";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App wants to access the Photo Library to pick image for product";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -592,6 +617,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mehus-shop/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Mehus Shop";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "App wants to access the Media Library to pick media for product";
+				INFOPLIST_KEY_NSCameraUsageDescription = "App wants to use the camera to capture image for product";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App wants to access your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App wants to access your location";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App wants to access the Photo Library to pick image for product";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
