@@ -16,6 +16,8 @@ class Constants {
     public static let createProductController = "CreateProductController"
     public static let addressController = "AddressController"
     public static let addAddressController = "AddAddressController"
+    public static let tutorialController = "TutorialController"
+    public static let tutorialContentController = "TutorialContentController"
 }
 
 class CellIdentifier {

@@ -47,6 +47,9 @@
 		5BD109CB2A95109500B7A4E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD109CA2A95109500B7A4E4 /* Assets.xcassets */; };
 		5BD109CE2A95109500B7A4E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD109CC2A95109500B7A4E4 /* LaunchScreen.storyboard */; };
 		5BD109D72A95154900B7A4E4 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD109D52A95154900B7A4E4 /* LoginController.swift */; };
+		5BE769D12ADED7F500911BE3 /* TutorialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE769D02ADED7F500911BE3 /* TutorialController.swift */; };
+		5BE769D32ADED96500911BE3 /* TutorialContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE769D22ADED96500911BE3 /* TutorialContentController.swift */; };
+		5BE769D52ADEDBA200911BE3 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE769D42ADEDBA200911BE3 /* Page.swift */; };
 		5BFA60302A9E4AFE00112E14 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA602F2A9E4AFE00112E14 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +95,9 @@
 		5BD109CD2A95109500B7A4E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BD109CF2A95109500B7A4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BD109D52A95154900B7A4E4 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		5BE769D02ADED7F500911BE3 /* TutorialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialController.swift; sourceTree = "<group>"; };
+		5BE769D22ADED96500911BE3 /* TutorialContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialContentController.swift; sourceTree = "<group>"; };
+		5BE769D42ADEDBA200911BE3 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		5BFA602F2A9E4AFE00112E14 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		76767941D87BC0004E7F2AC7 /* Pods-mehus-shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mehus-shop.debug.xcconfig"; path = "Target Support Files/Pods-mehus-shop/Pods-mehus-shop.debug.xcconfig"; sourceTree = "<group>"; };
 		DCF74A809AF3353D32F0CDF2 /* Pods_mehus_shop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mehus_shop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +132,7 @@
 				5B61FDF82AACD0600073C894 /* Product.swift */,
 				5B472BD92AB0C40900852F26 /* DisplayProduct.swift */,
 				5B6F06362ADAE927001BD337 /* Address.swift */,
+				5BE769D42ADEDBA200911BE3 /* Page.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,6 +215,8 @@
 				5B30713E2AD1A47100303B86 /* CreateProductController.swift */,
 				5B6F06322ADAE3D7001BD337 /* AddressController.swift */,
 				5B6F06342ADAE5E5001BD337 /* AddAddressController.swift */,
+				5BE769D02ADED7F500911BE3 /* TutorialController.swift */,
+				5BE769D22ADED96500911BE3 /* TutorialContentController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -404,6 +413,7 @@
 			files = (
 				5BAEE7602AA39945007D92A4 /* OrdersController.swift in Sources */,
 				5B61FDFC2AACD48A0073C894 /* SearchCell.swift in Sources */,
+				5BE769D32ADED96500911BE3 /* TutorialContentController.swift in Sources */,
 				5B6F06352ADAE5E5001BD337 /* AddAddressController.swift in Sources */,
 				5B3071412AD1AE7600303B86 /* FileUploadResponse.swift in Sources */,
 				5BFA60302A9E4AFE00112E14 /* UIViewExtension.swift in Sources */,
@@ -413,6 +423,7 @@
 				5BD109C62A95109400B7A4E4 /* SplashController.swift in Sources */,
 				5B7D80F22AA8D48D00151FE3 /* ProfileController.swift in Sources */,
 				5BAC7EC62ACC5BE2000ACA0A /* StringExtension.swift in Sources */,
+				5BE769D12ADED7F500911BE3 /* TutorialController.swift in Sources */,
 				5BAC7ECB2ACC619A000ACA0A /* LoginRequest.swift in Sources */,
 				5B472BDA2AB0C40900852F26 /* DisplayProduct.swift in Sources */,
 				5BAEE7622AA3995B007D92A4 /* SettingsController.swift in Sources */,
@@ -422,6 +433,7 @@
 				5BAC7ECE2ACC61B1000ACA0A /* LoginResponse.swift in Sources */,
 				5B30713F2AD1A47100303B86 /* CreateProductController.swift in Sources */,
 				5BD109C22A95109400B7A4E4 /* AppDelegate.swift in Sources */,
+				5BE769D52ADEDBA200911BE3 /* Page.swift in Sources */,
 				5BAEE75E2AA39927007D92A4 /* SearchController.swift in Sources */,
 				5B6F06332ADAE3D7001BD337 /* AddressController.swift in Sources */,
 				5BD109C42A95109400B7A4E4 /* SceneDelegate.swift in Sources */,

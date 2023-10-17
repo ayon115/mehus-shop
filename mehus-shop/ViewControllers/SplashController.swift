@@ -49,8 +49,16 @@ class SplashController: UIViewController {
             if let sceneDelegate = currentWindowScene.delegate as? SceneDelegate, let window = sceneDelegate.window {
                 // print(window.rootViewController)
                 
-                if let authViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.authNavigationController) as? UINavigationController {
-                    window.rootViewController = authViewController
+                let userDefaults = UserDefaults.standard
+                let tutorialSeen = userDefaults.bool(forKey: "tutorialSeen")
+                if tutorialSeen == true {
+                    if let authViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.authNavigationController) as? UINavigationController {
+                        window.rootViewController = authViewController
+                    }
+                } else {
+                    if let tutorialController = self.storyboard?.instantiateViewController(withIdentifier: Constants.tutorialController) as? TutorialController {
+                        window.rootViewController = tutorialController
+                    }
                 }
             }
         }
