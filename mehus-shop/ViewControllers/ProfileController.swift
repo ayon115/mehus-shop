@@ -46,16 +46,30 @@ class ProfileController: UIViewController {
         self.notifyLabel.isUserInteractionEnabled = true
         self.notifyLabel.addGestureRecognizer(singleTapGestureRecognizer)
         
-      //  self.clickmeButton.setTitle("My Button", for: .normal)
-      //  self.clickmeButton.addTarget(self, action: #selector(self.buttonClickHandler), for: .touchUpInside)
-      //  self.clickmeButton.addControlEvent(.touchUpInside) {
-      //      print("button click with ActionKit closure")
-      //  }
-        
         self.nameLabel.text = "Deamon Targariyen"
         self.bioLabel.text = "Prince Daemon Targaryen is a prince of the Targaryen dynasty, and the younger brother of King Viserys I Targaryen. He is the uncle of Queen Rhaenyra Targaryen, and later becomes her second husband and king consort."
        
         self.fetchUserProfile()
+        
+        let editProfileButton = UIBarButtonItem(title: "Update Profile") { action in
+            print("Update profile clicked.")
+            if let updateProfileController = self.storyboard?.instantiateViewController(withIdentifier: Constants.updateProfileController) as? UpdateProfileController {
+                updateProfileController.updateProfileDelegate = self
+                self.navigationController?.pushViewController(updateProfileController, animated: true)
+            }
+        }
+        self.navigationItem.rightBarButtonItem = editProfileButton
+        
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(profileUpdated(notification:)), name: Notification.Name(AppData.broadcastName), object: nil)
+        
+    }
+    
+    @objc func profileUpdated (notification: NSNotification) {
+        print("\(AppData.broadcastName) notification received.")
+        if let updatedName = notification.object as? String {
+            print("\(AppData.broadcastName) notification received at \(Constants.profileController) with Data = \(updatedName)")
+        }
     }
     
    
@@ -100,5 +114,17 @@ class ProfileController: UIViewController {
         if let url = URL(string: profile.avatar) {
             self.profilePhotoImageView.kf.setImage(with: url)
         }
+    }
+}
+
+extension ProfileController: UpdateProfileProtocol {
+    
+    func justNotify() {
+        print("justNotify has been called from next view controller")
+    }
+    
+    func notifyWithObject(updatedName: String) {
+        print("notifyWithObject has been called from next view controller with Text => \(updatedName)")
+        self.nameLabel.text = updatedName
     }
 }

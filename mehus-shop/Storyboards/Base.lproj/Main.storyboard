@@ -628,6 +628,68 @@
             </objects>
             <point key="canvasLocation" x="4853" y="2812"/>
         </scene>
+        <!--Update Profile Controller-->
+        <scene sceneID="WYE-md-Cx3">
+            <objects>
+                <viewController storyboardIdentifier="UpdateProfileController" id="gwg-BE-eN4" customClass="UpdateProfileController" customModule="mehus_shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pes-Gc-cRx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Set New Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgs-sM-ePw">
+                                <rect key="frame" x="50" y="109" width="293" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37F-3K-PEg">
+                                <rect key="frame" x="96.666666666666686" y="173" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="WJE-pp-vp8"/>
+                                    <constraint firstAttribute="height" constant="40" id="jCt-gW-qoi"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save Updated Name">
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Al2-94-sh6">
+                                <rect key="frame" x="96.666666666666686" y="263" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3fa-GW-qS3"/>
+                                    <constraint firstAttribute="width" constant="200" id="REQ-4e-ATj"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Broadcast Name">
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SBc-YI-j1B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SBc-YI-j1B" firstAttribute="trailing" secondItem="qgs-sM-ePw" secondAttribute="trailing" constant="50" id="DiI-ui-zUu"/>
+                            <constraint firstItem="37F-3K-PEg" firstAttribute="centerX" secondItem="Pes-Gc-cRx" secondAttribute="centerX" id="a6d-jp-LiW"/>
+                            <constraint firstItem="Al2-94-sh6" firstAttribute="centerX" secondItem="Pes-Gc-cRx" secondAttribute="centerX" id="l5Z-tt-t6a"/>
+                            <constraint firstItem="qgs-sM-ePw" firstAttribute="leading" secondItem="SBc-YI-j1B" secondAttribute="leading" constant="50" id="oqQ-mM-grZ"/>
+                            <constraint firstItem="qgs-sM-ePw" firstAttribute="top" secondItem="SBc-YI-j1B" secondAttribute="top" constant="50" id="sZu-YF-1aU"/>
+                            <constraint firstItem="Al2-94-sh6" firstAttribute="top" secondItem="37F-3K-PEg" secondAttribute="bottom" constant="50" id="ybP-NZ-pxo"/>
+                            <constraint firstItem="37F-3K-PEg" firstAttribute="top" secondItem="qgs-sM-ePw" secondAttribute="bottom" constant="30" id="zse-it-Zeb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="broadcastButton" destination="Al2-94-sh6" id="kIb-qS-0Qd"/>
+                        <outlet property="nameTextField" destination="qgs-sM-ePw" id="TSw-ph-6Zg"/>
+                        <outlet property="updateButton" destination="37F-3K-PEg" id="jFM-cr-XtB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nvt-aV-Uhf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5613" y="2824"/>
+        </scene>
         <!--Category Controller-->
         <scene sceneID="cT4-Dk-yMC">
             <objects>

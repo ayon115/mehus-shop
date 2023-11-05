@@ -18,6 +18,8 @@ class Constants {
     public static let addAddressController = "AddAddressController"
     public static let tutorialController = "TutorialController"
     public static let tutorialContentController = "TutorialContentController"
+    public static let updateProfileController = "UpdateProfileController"
+    public static let ordersController = "OrdersController"
 }
 
 class CellIdentifier {
@@ -38,5 +40,6 @@ class RestClient {
 
 class AppData {
     public static var addresses: [Address] = []
+    public static let broadcastName = "NameUpdatedBroadcast"
 }
 

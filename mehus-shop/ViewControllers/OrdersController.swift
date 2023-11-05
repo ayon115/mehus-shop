@@ -14,8 +14,17 @@ class OrdersController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.navigationItem.title = "My Orders"
+        
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(profileUpdated(notification:)), name: Notification.Name(AppData.broadcastName), object: nil)
     }
     
+    @objc func profileUpdated (notification: NSNotification) {
+        print("\(AppData.broadcastName) notification received.")
+        if let updatedName = notification.object as? String {
+            print("\(AppData.broadcastName) notification received at \(Constants.ordersController) with Data = \(updatedName)")
+        }
+    }
 
     /*
     // MARK: - Navigation

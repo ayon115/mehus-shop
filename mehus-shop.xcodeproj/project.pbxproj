@@ -14,6 +14,8 @@
 		5B472BD72AB0C01900852F26 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B472BD52AB0C01900852F26 /* ProductCell.swift */; };
 		5B472BD82AB0C01900852F26 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B472BD62AB0C01900852F26 /* ProductCell.xib */; };
 		5B472BDA2AB0C40900852F26 /* DisplayProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B472BD92AB0C40900852F26 /* DisplayProduct.swift */; };
+		5B577A442AF68DC0007CFF91 /* UpdateProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B577A432AF68DC0007CFF91 /* UpdateProfileController.swift */; };
+		5B577A472AF6905D007CFF91 /* UpdateProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B577A462AF6905D007CFF91 /* UpdateProfileProtocol.swift */; };
 		5B61FDF92AACD0600073C894 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B61FDF82AACD0600073C894 /* Product.swift */; };
 		5B61FDFC2AACD48A0073C894 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B61FDFA2AACD48A0073C894 /* SearchCell.swift */; };
 		5B61FDFD2AACD48A0073C894 /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B61FDFB2AACD48A0073C894 /* SearchCell.xib */; };
@@ -60,6 +62,8 @@
 		5B472BD52AB0C01900852F26 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		5B472BD62AB0C01900852F26 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		5B472BD92AB0C40900852F26 /* DisplayProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayProduct.swift; sourceTree = "<group>"; };
+		5B577A432AF68DC0007CFF91 /* UpdateProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileController.swift; sourceTree = "<group>"; };
+		5B577A462AF6905D007CFF91 /* UpdateProfileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileProtocol.swift; sourceTree = "<group>"; };
 		5B61FDF82AACD0600073C894 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		5B61FDFA2AACD48A0073C894 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		5B61FDFB2AACD48A0073C894 /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
@@ -124,6 +128,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5B577A452AF69043007CFF91 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5B577A462AF6905D007CFF91 /* UpdateProfileProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		5B61FDF72AACD0500073C894 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +188,7 @@
 		5BD109C02A95109400B7A4E4 /* mehus-shop */ = {
 			isa = PBXGroup;
 			children = (
+				5B577A452AF69043007CFF91 /* Protocols */,
 				5B61FDF72AACD0500073C894 /* Models */,
 				5BFA602E2A9E4AD600112E14 /* Extensions */,
 				5BFA602D2A9E427700112E14 /* ViewModels */,
@@ -217,6 +230,7 @@
 				5B6F06342ADAE5E5001BD337 /* AddAddressController.swift */,
 				5BE769D02ADED7F500911BE3 /* TutorialController.swift */,
 				5BE769D22ADED96500911BE3 /* TutorialContentController.swift */,
+				5B577A432AF68DC0007CFF91 /* UpdateProfileController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -423,6 +437,7 @@
 				5BD109C62A95109400B7A4E4 /* SplashController.swift in Sources */,
 				5B7D80F22AA8D48D00151FE3 /* ProfileController.swift in Sources */,
 				5BAC7EC62ACC5BE2000ACA0A /* StringExtension.swift in Sources */,
+				5B577A442AF68DC0007CFF91 /* UpdateProfileController.swift in Sources */,
 				5BE769D12ADED7F500911BE3 /* TutorialController.swift in Sources */,
 				5BAC7ECB2ACC619A000ACA0A /* LoginRequest.swift in Sources */,
 				5B472BDA2AB0C40900852F26 /* DisplayProduct.swift in Sources */,
@@ -442,6 +457,7 @@
 				5B7B65CD2AB5FD6D004ED405 /* CategoryHolderCell.swift in Sources */,
 				5B6F063A2ADAED5E001BD337 /* AddressCell.swift in Sources */,
 				5BAEE7642AA39E10007D92A4 /* ProductsController.swift in Sources */,
+				5B577A472AF6905D007CFF91 /* UpdateProfileProtocol.swift in Sources */,
 				5B61FDF92AACD0600073C894 /* Product.swift in Sources */,
 				5BAC7EC82ACC5D24000ACA0A /* UIViewControllerExtension.swift in Sources */,
 				5B7B65D52AB60490004ED405 /* CategoryCell.swift in Sources */,
