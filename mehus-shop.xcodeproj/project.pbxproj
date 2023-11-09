@@ -42,6 +42,9 @@
 		5BAEE7622AA3995B007D92A4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEE7612AA3995B007D92A4 /* SettingsController.swift */; };
 		5BAEE7642AA39E10007D92A4 /* ProductsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEE7632AA39E10007D92A4 /* ProductsController.swift */; };
 		5BB3DB4E2A9A678400AD9A0F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3DB4D2A9A678400AD9A0F /* Constants.swift */; };
+		5BCE61FB2AFA8D6400A2E918 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCE61FA2AFA8D6400A2E918 /* LoginViewModel.swift */; };
+		5BCE61FD2AFA8FBC00A2E918 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCE61FC2AFA8FBC00A2E918 /* LoginService.swift */; };
+		5BCE61FF2AFA90BF00A2E918 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCE61FE2AFA90BF00A2E918 /* LoginProtocol.swift */; };
 		5BD109C22A95109400B7A4E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD109C12A95109400B7A4E4 /* AppDelegate.swift */; };
 		5BD109C42A95109400B7A4E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD109C32A95109400B7A4E4 /* SceneDelegate.swift */; };
 		5BD109C62A95109400B7A4E4 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD109C52A95109400B7A4E4 /* SplashController.swift */; };
@@ -90,6 +93,9 @@
 		5BAEE7612AA3995B007D92A4 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		5BAEE7632AA39E10007D92A4 /* ProductsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsController.swift; sourceTree = "<group>"; };
 		5BB3DB4D2A9A678400AD9A0F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5BCE61FA2AFA8D6400A2E918 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5BCE61FC2AFA8FBC00A2E918 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		5BCE61FE2AFA90BF00A2E918 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
 		5BD109BE2A95109400B7A4E4 /* mehus-shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mehus-shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD109C12A95109400B7A4E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BD109C32A95109400B7A4E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				5B577A462AF6905D007CFF91 /* UpdateProfileProtocol.swift */,
+				5BCE61FE2AFA90BF00A2E918 /* LoginProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -274,6 +281,7 @@
 		5BFA602C2A9E426D00112E14 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5BCE61FC2AFA8FBC00A2E918 /* LoginService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -281,6 +289,7 @@
 		5BFA602D2A9E427700112E14 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				5BCE61FA2AFA8D6400A2E918 /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -440,10 +449,12 @@
 				5B577A442AF68DC0007CFF91 /* UpdateProfileController.swift in Sources */,
 				5BE769D12ADED7F500911BE3 /* TutorialController.swift in Sources */,
 				5BAC7ECB2ACC619A000ACA0A /* LoginRequest.swift in Sources */,
+				5BCE61FF2AFA90BF00A2E918 /* LoginProtocol.swift in Sources */,
 				5B472BDA2AB0C40900852F26 /* DisplayProduct.swift in Sources */,
 				5BAEE7622AA3995B007D92A4 /* SettingsController.swift in Sources */,
 				5BD109D72A95154900B7A4E4 /* LoginController.swift in Sources */,
 				5B30713D2AD19E7100303B86 /* ProfileResponse.swift in Sources */,
+				5BCE61FD2AFA8FBC00A2E918 /* LoginService.swift in Sources */,
 				5BAEE75C2AA3990E007D92A4 /* CategoryController.swift in Sources */,
 				5BAC7ECE2ACC61B1000ACA0A /* LoginResponse.swift in Sources */,
 				5B30713F2AD1A47100303B86 /* CreateProductController.swift in Sources */,
@@ -454,6 +465,7 @@
 				5BD109C42A95109400B7A4E4 /* SceneDelegate.swift in Sources */,
 				5B472BD72AB0C01900852F26 /* ProductCell.swift in Sources */,
 				5B6F06372ADAE927001BD337 /* Address.swift in Sources */,
+				5BCE61FB2AFA8D6400A2E918 /* LoginViewModel.swift in Sources */,
 				5B7B65CD2AB5FD6D004ED405 /* CategoryHolderCell.swift in Sources */,
 				5B6F063A2ADAED5E001BD337 /* AddressCell.swift in Sources */,
 				5BAEE7642AA39E10007D92A4 /* ProductsController.swift in Sources */,
