@@ -41,7 +41,21 @@ class LoginViewModel {
     }
     
     func login (email: String, password: String) {
-        self.loginService.initiateLogin(email: email, password: password, loginDelegate: self)
+      //  self.loginService.initiateLogin(email: email, password: password, loginDelegate: self)
+        self.loginVCDelegate?.onProcessStart()
+        self.loginService.doLogin(email: email, password: password) { loginResponse, errorMessage, error in
+            
+            if let accessToken = loginResponse?.access_token {
+               // self.writeToUserDefaults(key: "accessToken", value: accessToken)
+               // self.keychain.set(email, forKey: "email")
+               // self.keychain.set(password, forKey: "password")
+               // self.navigate()
+                print(accessToken)
+                self.loginVCDelegate?.onSuccess(loginResponse: loginResponse)
+            } else if let errorMessage = errorMessage {
+                self.loginVCDelegate?.onError(errorMessage: errorMessage)
+            }
+        }
     }
     
 }

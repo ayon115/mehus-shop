@@ -37,4 +37,32 @@ class LoginService {
             }
         }
     }
+    
+    
+    func doLogin (email: String, password: String, onComplete: @escaping (LoginResponse?, String?, Error?) -> ()) {
+        
+        let url = RestClient.baseUrl + RestClient.loginUrl
+        let loginRequest = LoginRequest(email: email, password: password)
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json"
+        ]
+        
+        AF.request(url, method: .post, parameters: loginRequest, encoder: JSONParameterEncoder.default, headers: headers, interceptor: nil, requestModifier: nil).responseDecodable(of: LoginResponse.self) { response in
+            
+            switch (response.result) {
+                case .success:
+                print(response)
+                if let responseData = response.value {
+                    if let _ = responseData.access_token {
+                        onComplete(responseData, nil, nil)
+                    } else if let _ = responseData.statusCode, let message = responseData.message {
+                        onComplete(nil, message, nil)
+                    }
+                }
+                case let .failure(error):
+                    print(error)
+                    onComplete(nil, nil, error)
+            }
+        }
+    }
 }
